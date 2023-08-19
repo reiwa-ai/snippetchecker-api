@@ -26,6 +26,7 @@ setup(
     maintainer_email='contact@reiwa-ai.biz',
     description='Check LLM generated snippets',
     long_description=readme,
+    long_description_content_type='text/markdown',
     packages=['snippetchecker'],
     install_requires=[],
     license="MIT",
