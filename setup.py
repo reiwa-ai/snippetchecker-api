@@ -14,7 +14,7 @@ except IOError:
 
 # version
 here = os.path.dirname(os.path.abspath(__file__))
-version = '0.1.0a'
+version = '0.1.0'
 
 setup(
     name="snippetchecker-api",
@@ -48,5 +48,3 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
 )
-from snippetchecker.scripts import initial
-initial.initialrun()
