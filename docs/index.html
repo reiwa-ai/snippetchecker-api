@@ -1,0 +1,514 @@
+
+
+<!doctype html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>snippetchecker-api ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b849a4e9" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css?v=0aa5819d" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=279bc362"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/translations.js?v=4dbe4bdc"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="#">snippetchecker-api  ドキュメント</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">snippetchecker-api  ドキュメント</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-package-s-documentation">
+<h1>Welcome to package's documentation!<a class="headerlink" href="#welcome-to-package-s-documentation" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-snippetchecker"></span><section id="snippetchecker-package">
+<h2>snippetchecker package<a class="headerlink" href="#snippetchecker-package" title="この見出しへのパーマリンク">¶</a></h2>
+<section id="submodules">
+<h3>Submodules<a class="headerlink" href="#submodules" title="この見出しへのパーマリンク">¶</a></h3>
+</section>
+<section id="module-snippetchecker.api">
+<span id="snippetchecker-api-module"></span><h3>snippetchecker.api module<a class="headerlink" href="#module-snippetchecker.api" title="この見出しへのパーマリンク">¶</a></h3>
+
+<p>snippetchecker</p>
+<p>SnippetChecker API実行版</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopStructure">
+<em class="property"><span class="pre">class</span><span class="w">  </span></em><span class="sig-prename descclassname"><span class="pre">snippetchecker.api.</span></span><span class="sig-name descname"><span class="pre">LoopStructure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType"><span class="pre">LoopType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType"><span class="pre">LoopType</span></a><span class="w">  </span><span class="p"><span class="pre">|</span></span><span class="w">  </span><span class="pre">NamedTuple</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.LoopStructure" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>LoopType</p>
+<p>ループの入れ子構造</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopStructure.body">
+<span class="sig-name descname"><span class="pre">body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType"><span class="pre">LoopType</span></a><span class="w">  </span><span class="p"><span class="pre">|</span></span><span class="w">  </span><span class="pre">NamedTuple</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#snippetchecker.api.LoopStructure.body" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ループ内に存在する子ループのリスト</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopStructure.loop">
+<span class="sig-name descname"><span class="pre">loop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w">  </span><a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType"><span class="pre">LoopType</span></a></em><a class="headerlink" href="#snippetchecker.api.LoopStructure.loop" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ループの種類</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType">
+<em class="property"><span class="pre">class</span><span class="w">  </span></em><span class="sig-prename descclassname"><span class="pre">snippetchecker.api.</span></span><span class="sig-name descname"><span class="pre">LoopType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.LoopType" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>ループのタイプ</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType.NO_LOOP">
+<span class="sig-name descname"><span class="pre">NO_LOOP</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">1</span></em><a class="headerlink" href="#snippetchecker.api.LoopType.NO_LOOP" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType.CONSTANT_LOOP">
+<span class="sig-name descname"><span class="pre">CONSTANT_LOOP</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">2</span></em><a class="headerlink" href="#snippetchecker.api.LoopType.CONSTANT_LOOP" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType.GENERAL_LOOP">
+<span class="sig-name descname"><span class="pre">GENERAL_LOOP</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">3</span></em><a class="headerlink" href="#snippetchecker.api.LoopType.GENERAL_LOOP" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+  
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType.CONSTANT_COMPREHENSION">
+<span class="sig-name descname"><span class="pre">CONSTANT_COMPREHENSION</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">4</span></em><a class="headerlink" href="#snippetchecker.api.LoopType.CONSTANT_COMPREHENSION" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.LoopType.GENERAL_COMPREHENSION">
+<span class="sig-name descname"><span class="pre">GENERAL_COMPREHENSION</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">5</span></em><a class="headerlink" href="#snippetchecker.api.LoopType.GENERAL_COMPREHENSION" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker">
+<em class="property"><span class="pre">class</span><span class="w">  </span></em><span class="sig-prename descclassname"><span class="pre">snippetchecker.api.</span></span><span class="sig-name descname"><span class="pre">SnippetChecker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allow_save_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_configure_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uniq_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.SnippetChecker" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>snippetchecker</p>
+<p>SnippetChecker API実行版</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.check_formal_assign">
+<span class="sig-name descname"><span class="pre">check_formal_assign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_name</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_function</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.check_formal_assign" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>正常な代入文かどうかをチェックする</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p></li>
+<li><p><strong>target_name</strong> (<em>str</em>) -- 代入先の変数名</p></li>
+<li><p><strong>safe_function</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- 呼び出しを許可する関数名</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>正常な代入文かどうか</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">check_formal_assign</span><span class="p">(</span><span class="s2">&quot;hoge = 1 + random.randint(1,100)&quot;</span><span class="p">,</span> <span class="s2">&quot;hoge&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;random.randint&quot;</span><span class="p">])</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.check_formal_snippet">
+<span class="sig-name descname"><span class="pre">check_formal_snippet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_function</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_objects</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_modules</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.check_formal_snippet" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>正常なスニペットどうかをチェックする</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p></li>
+<li><p><strong>safe_function</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- 呼び出しを許可する関数名</p></li>
+<li><p><strong>safe_objects</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- 使用を許可するオブジェクト名</p></li>
+<li><p><strong>safe_modules</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- インポートを許可するモジュール名</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>正常な代入文かどうか</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">check_formal_snippet</span><span class="p">(</span><span class="s1">&#39;import random</span><span class="se">\n</span><span class="s1">hoge = 1</span><span class="se">\n</span><span class="s1">while True:</span><span class="se">\n</span><span class="s1">  hoge += random.randint(1,100)&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;random.randint&#39;</span><span class="p">],</span> <span class="p">[],</span> <span class="p">[</span><span class="s1">&#39;random&#39;</span><span class="p">])</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.clear_errors">
+<span class="sig-name descname"><span class="pre">clear_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.clear_errors" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.determine_snippet_type">
+<span class="sig-name descname"><span class="pre">determine_snippet_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="index.html#snippetchecker.api.SnippetType" title="snippetchecker.api.SnippetType"><span class="pre">SnippetType</span></a></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.determine_snippet_type" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペットのタイプを認識する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>スニペットのタイプ</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="index.html#snippetchecker.api.SnippetType" title="snippetchecker.api.SnippetType">SnippetType</a></p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">determine_snippet_type</span><span class="p">(</span><span class="s2">&quot;hoge = hogehoge + 1&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">LINE_ASSIGN</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_classes_define">
+<span class="sig-name descname"><span class="pre">enumerate_classes_define</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_classes_define" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内で定義されているクラスを列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>定義されているクラスの一覧</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_classes_define</span><span class="p">(</span><span class="s2">&quot;class hoge():</span><span class="se">\n</span><span class="s2">  hogehoge=1&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hoge&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_difinitions_used">
+<span class="sig-name descname"><span class="pre">enumerate_difinitions_used</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_difinitions_used" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内での定義を列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>List</strong><strong>[</strong><strong>str</strong><strong>]</strong> -- 定義されている名前の一覧</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>スニペットのタイプ</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="index.html#snippetchecker.api.SnippetType" title="snippetchecker.api.SnippetType">SnippetType</a></p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_difinitions_used</span><span class="p">(</span><span class="s2">&quot;hoge = hogehoge + 1&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hoge&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_functions_called">
+<span class="sig-name descname"><span class="pre">enumerate_functions_called</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_functions_called" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内で呼び出されている関数を列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>呼び出されている関数の一覧</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_functions_called</span><span class="p">(</span><span class="s2">&quot;hoge = random.randint(1,100) + 1&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;random.randint&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_functions_define">
+<span class="sig-name descname"><span class="pre">enumerate_functions_define</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_functions_define" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内で定義されている関数を列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>定義されている関数の一覧</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_functions_define</span><span class="p">(</span><span class="s2">&quot;def hoge():</span><span class="se">\n</span><span class="s2">  pass&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hoge&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_packages_import">
+<span class="sig-name descname"><span class="pre">enumerate_packages_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_packages_import" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内でインポートされているパッケージを列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>インポートされているパッケージの一覧</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_packages_import</span><span class="p">(</span><span class="s2">&quot;import random&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;random&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.enumerate_variables_assign">
+<span class="sig-name descname"><span class="pre">enumerate_variables_assign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.enumerate_variables_assign" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペット内で代入更新されている定義を列挙する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>代入されている名前の一覧</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enumerate_variables_assign</span><span class="p">(</span><span class="s2">&quot;hoge = hogehoge + 1&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hoge&#39;</span><span class="p">]</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.find_loop_in_snippet">
+<span class="sig-name descname"><span class="pre">find_loop_in_snippet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType"><span class="pre">LoopType</span></a><span class="w">  </span><span class="p"><span class="pre">|</span></span><span class="w">  </span><a class="reference internal" href="index.html#snippetchecker.api.LoopStructure" title="snippetchecker.api.LoopStructure"><span class="pre">LoopStructure</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.find_loop_in_snippet" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>スニペットに含まれるループの種類を判定する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>str</em>) -- スニペットの文字列</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>ループの入れ子構造</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Union[<a class="reference internal" href="index.html#snippetchecker.api.LoopType" title="snippetchecker.api.LoopType">LoopType</a>,<a class="reference internal" href="index.html#snippetchecker.api.LoopStructure" title="snippetchecker.api.LoopStructure">LoopStructure</a>]]</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">find_loop_in_snippet</span><span class="p">(</span><span class="s2">&quot;a=0</span><span class="se">\n</span><span class="s2">for _ in range(10):</span><span class="se">\n</span><span class="s2">  a+=1</span><span class="se">\n</span><span class="s2">print(a)&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="n">CONSTANT_LOOP</span><span class="p">]</span>
+<span class="go">    True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">find_loop_in_snippet</span><span class="p">(</span><span class="s2">&quot;while True:</span><span class="se">\n</span><span class="s2">  [b for b in range(20)]&quot;</span><span class="p">)</span>
+<span class="go">    [LoopStructure(loop=&lt;LoopType.GENERAL_LOOP: 3&gt;, body=[&lt;LoopType.CONSTANT_COMPREHENSION: 4&gt;])]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetChecker.print_errors">
+<span class="sig-name descname"><span class="pre">print_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.SnippetChecker.print_errors" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType">
+<em class="property"><span class="pre">class</span><span class="w">  </span></em><span class="sig-prename descclassname"><span class="pre">snippetchecker.api.</span></span><span class="sig-name descname"><span class="pre">SnippetType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#snippetchecker.api.SnippetType" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>スニペットのタイプ</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.CODE_SNIPPET">
+<span class="sig-name descname"><span class="pre">CODE_SNIPPET</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">1</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.CODE_SNIPPET" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.CONSTANT_FORMULA">
+<span class="sig-name descname"><span class="pre">CONSTANT_FORMULA</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">5</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.CONSTANT_FORMULA" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.CONSTANT_STRUCTURE">
+<span class="sig-name descname"><span class="pre">CONSTANT_STRUCTURE</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">6</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.CONSTANT_STRUCTURE" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.CONSTANT_VALUE">
+<span class="sig-name descname"><span class="pre">CONSTANT_VALUE</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">4</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.CONSTANT_VALUE" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.LINE_ASSIGN">
+<span class="sig-name descname"><span class="pre">LINE_ASSIGN</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">2</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.LINE_ASSIGN" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.LINE_VIABLE">
+<span class="sig-name descname"><span class="pre">LINE_VIABLE</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">3</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.LINE_VIABLE" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="snippetchecker.api.SnippetType.UNDEFINED">
+<span class="sig-name descname"><span class="pre">UNDEFINED</span></span><em class="property"><span class="w">  </span><span class="p"><span class="pre">=</span></span><span class="w">  </span><span class="pre">7</span></em><a class="headerlink" href="#snippetchecker.api.SnippetType.UNDEFINED" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+
+</section>
+<section id="module-snippetchecker.support">
+<span id="snippetchecker-support-module"></span><h3>snippetchecker.support module<a class="headerlink" href="#module-snippetchecker.support" title="この見出しへのパーマリンク">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="snippetchecker.support.make_cleaned_builtins">
+<span class="sig-prename descclassname"><span class="pre">snippetchecker.support.</span></span><span class="sig-name descname"><span class="pre">make_cleaned_builtins</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allow_global_functions</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_import_modules</span></span><span class="p"><span class="pre">:</span></span><span class="w">  </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">object</span></span></span><a class="headerlink" href="#snippetchecker.support.make_cleaned_builtins" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>許可された組み込み関数とインポートのみ含んだ__builtins__を返す</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>allow_global_functions</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- 呼び出しを許可する関数名</p></li>
+<li><p><strong>allow_import_modules</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) -- インポートするモジュール名</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>新しい__builtins__</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<p>execで実行するときにコードチェックと組み合わせるとある程度安全なサンドボックスになる</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">global_builtins</span> <span class="o">=</span> <span class="n">make_cleaned_builtins</span><span class="p">(</span><span class="n">allow_global_functions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;int&#39;</span><span class="p">],</span> <span class="n">allow_import_modules</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;random&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">local_variables</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">exec</span><span class="p">(</span><span class="s1">&#39;test_val = int(random.random()*100)&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="p">{</span><span class="s1">&#39;__builtins__&#39;</span><span class="p">:</span><span class="n">global_builtins</span><span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">local_variables</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">local_variables</span><span class="p">)</span>
+<span class="go">{&#39;test_val&#39;: 58}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">exec</span><span class="p">(</span><span class="s1">&#39;test_val = float(random.random()*100)&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="p">{</span><span class="s1">&#39;__builtins__&#39;</span><span class="p">:</span><span class="n">global_builtins</span><span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">local_variables</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="p">)</span>
+<span class="go">NameError: name &#39;float&#39; is not defined</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>__builtins__だけでは安全な実行は出来ないので、事前のコードチェックを必ず行うこと
+無限ループによるリソースの食い潰し等には対処できないので、その場合はSnippetRunnerを使うこと</p>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">目次</a></h3>
+    <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-snippetchecker">snippetchecker package</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#module-snippetchecker.api">snippetchecker.api module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#snippetchecker.api.LoopStructure">LoopStructure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#snippetchecker.api.LoopType">LoopType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker">SnippetChecker</a><ul>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.check_formal_assign"><code class="docutils literal notranslate"><span class="pre">check_formal_assign()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.check_formal_snippet"><code class="docutils literal notranslate"><span class="pre">check_formal_snippet()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.clear_errors"><code class="docutils literal notranslate"><span class="pre">clear_errors()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.determine_snippet_type"><code class="docutils literal notranslate"><span class="pre">determine_snippet_type()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_classes_define"><code class="docutils literal notranslate"><span class="pre">enumerate_classes_define()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_difinitions_used"><code class="docutils literal notranslate"><span class="pre">enumerate_difinitions_used()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_functions_called"><code class="docutils literal notranslate"><span class="pre">enumerate_functions_called()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_functions_define"><code class="docutils literal notranslate"><span class="pre">enumerate_functions_define()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_packages_import"><code class="docutils literal notranslate"><span class="pre">enumerate_packages_import()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.enumerate_variables_assign"><code class="docutils literal notranslate"><span class="pre">enumerate_variables_assign()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.find_loop_in_snippet"><code class="docutils literal notranslate"><span class="pre">find_loop_in_snippet()</span></code></a></li>
+  <li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.api.SnippetChecker.print_errors"><code class="docutils literal notranslate"><span class="pre">print_errors()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#snippetchecker.api.SnippetType">SnippetType</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#module-snippetchecker.support">snippetchecker.support module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#snippetchecker.support.make_cleaned_builtins"><code class="docutils literal notranslate"><span class="pre">make_cleaned_builtins()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="#">snippetchecker-api  ドキュメント</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">snippetchecker-api  ドキュメント</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; 著作権 2023, Reiwa AI K.K..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    </div>
+  </body>
+</html>
